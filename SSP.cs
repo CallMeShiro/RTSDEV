@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
  
-namespace ROCKPAPERSCISSORS
+namespace StenSaxPase
 {
     class Program
     {
@@ -36,56 +36,56 @@ namespace ROCKPAPERSCISSORS
                     switch (randomInt)
                     {
                         case 1:
-                            inputCPU = "ROCK";
-                            Console.WriteLine("Computer chose ROCK");
-                            if (inputPlayer == "ROCK")
+                            inputCPU = "STEN";
+                            Console.WriteLine("Computer chose STEN");
+                            if (inputPlayer == "STEN")
                             {
-                                Console.WriteLine("DRAW!!\n\n");
+                                Console.WriteLine("Oavgjort!!\n\n");
                             }
-                            else if (inputPlayer == "PAPER")
+                            else if (inputPlayer == "PÅSE")
                             {
-                                Console.WriteLine("PLAYER WINS!!\n\n");
+                                Console.WriteLine("Spelare wins!\n\n");
                                 scorePlayer++;
                             }
-                            else if (inputPlayer == "SCISSORS")
+                            else if (inputPlayer == "SAX")
                             {
-                                Console.WriteLine("CPU WINS!!\n\n");
+                                Console.WriteLine("AI Vinner!\n\n");
                                 scoreCPU++;
                             }
                             break;
                         case 2:
-                            inputCPU = "PAPER";
-                            Console.WriteLine("Computer chose PAPER");
-                            if (inputPlayer == "PAPER")
+                            inputCPU = "PÅSE";
+                            Console.WriteLine("AI Valde PÅSE");
+                            if (inputPlayer == "PÅSE")
                             {
-                                Console.WriteLine("DRAW!!\n\n");
+                                Console.WriteLine("Oavgjort!\n\n");
                             }
                             else if (inputPlayer == "ROCK")
                             {
-                                Console.WriteLine("CPU WINS!!\n\n");
+                                Console.WriteLine("AI Vinner!\n\n");
                                 scoreCPU++;
                             }
-                            else if (inputPlayer == "SCISSORS")
+                            else if (inputPlayer == "SAX")
                             {
-                                Console.WriteLine("PLAYER WINS!!\n\n");
+                                Console.WriteLine("Spelare Vinner!\n\n");
                                 scorePlayer++;
                             }
                             break;
                         case 3:
-                            inputCPU = "SCISSORS";
-                            Console.WriteLine("Computer chose SCISSORS");
-                            if (inputPlayer == "SCISSORS")
+                            inputCPU = "SAX";
+                            Console.WriteLine("AI Valde Sax");
+                            if (inputPlayer == "SAX")
                             {
-                                Console.WriteLine("DRAW!!\n\n");
+                                Console.WriteLine("Oavgjort!\n\n");
                             }
-                            else if (inputPlayer == "ROCK")
+                            else if (inputPlayer == "STEN")
                             {
-                                Console.WriteLine("PLAYER WINS!!\n\n");
+                                Console.WriteLine("Spelare Vinner!\n\n");
                                 scorePlayer++;
                             }
-                            else if (inputPlayer == "PAPER")
+                            else if (inputPlayer == "PÅSE")
                             {
-                                Console.WriteLine("CPU WINS!!\n\n");
+                                Console.WriteLine("AI Vinner!\n\n");
                                 scoreCPU++;
                             }
                             break;
@@ -100,20 +100,20 @@ namespace ROCKPAPERSCISSORS
  
                 if (scorePlayer == 3)
                 {
-                    Console.WriteLine("Player WON!");
+                    Console.WriteLine("Spelare Vann!");
                 }
                 else if (scoreCPU == 3)
                 {
-                    Console.WriteLine("CPU WON!");
+                    Console.WriteLine("AI VANN!");
                 }
                 else
                 {
  
                 }
  
-                Console.WriteLine("Do you want to play again?(y/n)");
+                Console.WriteLine("Vill du spela igen?(j/n)");
                 string loop = Console.ReadLine();
-                if (loop == "y")
+                if (loop == "j")
                 {
                     playAgain = true;
                     Console.Clear();
